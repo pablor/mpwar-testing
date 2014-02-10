@@ -1,7 +1,8 @@
 <?php
-namespace Development;
 
-class MoneyTest extends \PHPUnit_Framework_TestCase
+include __DIR__ . '/../src/Money.php';
+
+class MoneyTest extends PHPUnit_Framework_TestCase
 {
     public function testCanBeNegated()
     {
