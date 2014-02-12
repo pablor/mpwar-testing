@@ -19,4 +19,16 @@ class Money
     {
         return new Money(-1 * $this->amount);
     }
+
+    public function notCoveredMethod( $value )
+    {
+        if ( !empty( $value ) )
+        {
+            $this->amount = $value;
+        }
+        else
+        {
+            $this->amount = 0;
+        }
+    }
 }
