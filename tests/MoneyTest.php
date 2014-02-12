@@ -1,8 +1,8 @@
 <?php
 
-include __DIR__ . '/../src/Money.php';
+namespace Development;
 
-class MoneyTest extends PHPUnit_Framework_TestCase
+class MoneyTest extends \PHPUnit_Framework_TestCase
 {
     public function testCanBeNegated()
     {
@@ -14,5 +14,6 @@ class MoneyTest extends PHPUnit_Framework_TestCase
 
         // Assert
         $this->assertEquals(-1, $b->getAmount());
+        $this->assertTrue(-2 == $b->getAmount());
     }
 }
