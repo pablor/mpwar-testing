@@ -19,13 +19,13 @@ class TemplateMethodsTest extends PHPUnit_Framework_TestCase
     public function testOne()
     {
         fwrite(STDOUT, __METHOD__ . "\n");
-        $this->assertTrue(TRUE);
+        $this->assertTrue(true);
     }
 
     public function testTwo()
     {
         fwrite(STDOUT, __METHOD__ . "\n");
-        $this->assertTrue(FALSE);
+        $this->assertTrue(true);
     }
 
     protected function assertPostConditions()

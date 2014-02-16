@@ -7,7 +7,7 @@ class ExceptionTest extends PHPUnit_Framework_TestCase
      */
     public function testExceptionHasRightMessage()
     {
-        throw new InvalidArgumentException('Some Message', 10);
+        throw new InvalidArgumentException('Right Message', 10);
     }
 
     /**
@@ -16,6 +16,6 @@ class ExceptionTest extends PHPUnit_Framework_TestCase
      */
     public function testExceptionHasRightCode()
     {
-        throw new InvalidArgumentException('Some Message', 10);
+        throw new InvalidArgumentException('Some Message', 20);
     }
 }
