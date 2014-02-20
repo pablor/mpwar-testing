@@ -3,3 +3,10 @@ php:
   - "5.4"
   - "5.3"
 script: phpunit --configuration phpunit.xml.dist
+
+env:
+  - DB=mysql
+
+before_script:
+  - mysql -e "create database IF NOT EXISTS mpwar;" -u root
+  - mysql -e "GRANT ALL ON mpwar.* TO 'user_test'@'localhost' IDENTIFIED BY 'passtest';" -u root
